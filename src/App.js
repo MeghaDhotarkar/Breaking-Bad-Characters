@@ -5,15 +5,13 @@ import Header from './components/Header'
 import CharacterList from './components/CharacterList';
 import Pagination from './components/Pagination';
 
-const NoMatchRoute = () => <div>404 Page</div>;
 const App = ()=> {
 
   const [items,setItems] = useState([]);
   const [isLoading,setIsLoading] = useState(true);
   const [currentPage,setCurrentPage] = useState(1);
   const [itemPerPage,setItemPerPage] = useState(10);
-  const [item,setItem] = useState([]);
-
+ 
   useEffect(() => {
     const fetchItem = async () => {
      const result = await axios('https://www.breakingbadapi.com/api/characters')
