@@ -25,8 +25,8 @@ const CharacterList = ({items,isLoading}) => {
                            <td>{item.name}</td>
                            <td>{item.birthday}</td>
                            <td>{item.status}</td>
-                           <td>{item.occupation}<button onClick={()=> window.open().
-                            document.write('<div className="container">'+item.name+"<br />"+
+                           <td>{item.occupation}<button onClick={()=> 
+                                window.open().document.write('<div className="container">'+item.name+"<br />"+
                                          '<img src='+item.img+'><br />'+
                                          item.birthday+"<br />"+
                                          item.nickname+"<br />"+
