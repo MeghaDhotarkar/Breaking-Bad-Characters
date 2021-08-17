@@ -10,7 +10,7 @@ const App = ()=> {
   const [items,setItems] = useState([]);
   const [isLoading,setIsLoading] = useState(true);
   const [currentPage,setCurrentPage] = useState(1);
-  const [itemPerPage,setItemPerPage] = useState(10);
+  const [itemPerPage] = useState(10);
  
   useEffect(() => {
     const fetchItem = async () => {
